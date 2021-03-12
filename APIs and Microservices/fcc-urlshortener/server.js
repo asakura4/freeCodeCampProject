@@ -8,7 +8,7 @@ const dns = require('dns');
 const crypto = require("crypto-js");
 const app = express();
 
-process.env.DB_URI='mongodb+srv://twang:Hello12345@cluster0.aceyg.mongodb.net/urldb?retryWrites=true&w=majority';
+process.env.DB_URI='' /* set mongoDB URL */;
 mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(bodyParser.urlencoded({
